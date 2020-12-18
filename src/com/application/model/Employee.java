@@ -1,8 +1,12 @@
 package com.application.model;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Employee implements Comparable{
+//Plain Old Java Object
+// MODEL
+// BEAN --> Spring framework
+public class Employee implements Comparable, Serializable {
     private String empId;
     private String empName;
     private String empDept;
